@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foodie — Support</title>
+<style>
+  :root {
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --rule: #e5e5e7;
+    --link: #0066cc;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: #fff;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 64px 24px 96px; }
+
+  .site-header {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 40px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h1 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px;
+  }
+  .lead { font-size: 19px; color: var(--text); margin: 0 0 24px; }
+
+  h2 {
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 40px 0 12px;
+  }
+  p { margin: 0 0 16px; color: var(--text); }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 600; }
+
+  .contact {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  details {
+    border-bottom: 1px solid var(--rule);
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 16px 0;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--muted);
+    flex: 0 0 auto;
+  }
+  details[open] summary::after { content: "\2212"; }
+  details .answer {
+    margin: 0 0 18px;
+    color: var(--text);
+  }
+
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .links a { margin-right: 18px; }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    .wrap { padding: 48px 20px 72px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-header">Foodie</header>
+
+  <h1>Support</h1>
+  <p class="lead">Need help with Foodie, have a question, or found a bug? We're happy to help.</p>
+
+  <h2>Contact us</h2>
+  <p>Email us and we'll get back to you as soon as we can:</p>
+  <p><a class="contact" href="mailto:purwalbsn@gmail.com">purwalbsn@gmail.com</a></p>
+
+  <h2>Common questions</h2>
+
+  <details>
+    <summary>How do I import a recipe?</summary>
+    <p class="answer">Paste a web link, choose a photo, or share a video to Foodie, and the app will turn it into a structured recipe.</p>
+  </details>
+
+  <details>
+    <summary>How do I manage my subscription?</summary>
+    <p class="answer">Foodie Pro is billed through your Apple ID. To view, change, or cancel it, open the Settings app on your device, tap your name, then tap Subscriptions. Deleting the app does not cancel a subscription.</p>
+  </details>
+
+  <details>
+    <summary>How do I restore a purchase?</summary>
+    <p class="answer">In Foodie, go to Settings and tap "Restore Purchases."</p>
+  </details>
+
+  <h2>Privacy &amp; terms</h2>
+  <p class="links">
+    <a href="index.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </p>
+
+  <footer>© 2026 Mikael Walde · Foodie</footer>
+
+</div>
+</body>
+</html>
